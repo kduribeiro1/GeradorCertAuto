@@ -37,10 +37,10 @@
     <ApplicationVersion>1.0.0.5</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
-    <UpdateInterval>7</UpdateInterval>
+    <UpdateInterval>0</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
     <ProductName>GeradorCertAuto</ProductName>
-    <PublisherName />
+    <PublisherName>Kdu Ribeiro</PublisherName>
     <SupportUrl />
     <FriendlyName>GeradorCertAuto</FriendlyName>
     <OfficeApplicationDescription />
@@ -270,6 +270,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>AB4B81856B4AD0EF5A3BE62B01052EE211710192</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GeradorCertAuto_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
