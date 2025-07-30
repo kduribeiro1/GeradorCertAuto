@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,16 +25,34 @@ namespace GeradorCertAuto
             listViewParametros.Columns.Add("Parâmetro", 180);
             listViewParametros.Columns.Add("Descrição", 350);
 
-            // Adiciona os parâmetros e descrições
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<Nome>>", "Nome completo do aluno conforme escrito no excel" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<NomeMaiusculo>>", "Nome completo do aluno em maiúsculas" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<NomePriMaiusculo>>", "Nome completo do aluno sendo com iniciais maiúsculas" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<Cargo>>", "Cargo do aluno conforme escrito no excel" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<CargoMaiusculo>>", "Cargo do aluno em maiúsculas" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<CargoPriMaiusculo>>", "Cargo do aluno sendo com iniciais maiúsculas" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<Empresa>>", "Empresa do aluno conforme escrito no excel" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<EmpresaMaiusculo>>", "Empresa do aluno em maiúsculas" }));
-            listViewParametros.Items.Add(new ListViewItem(new[] { "<<EmpresaPriMaiusculo>>", "Empresa do aluno sendo com iniciais maiúsculas" }));
+            // Obtém os nomes das colunas da configuração
+            var json = Properties.Settings.Default.ColunasExcel;
+            List<string> colunas;
+            if (string.IsNullOrWhiteSpace(json))
+                colunas = new List<string> { "Nome", "Cargo", "Empresa" };
+            else
+                colunas = JsonConvert.DeserializeObject<List<string>>(json);
+
+            // Adiciona os parâmetros e descrições dinamicamente
+            foreach (var coluna in colunas)
+            {
+                listViewParametros.Items.Add(new ListViewItem(new[]
+                {
+                    $"<<{coluna}>>",
+                    $"{coluna} conforme escrito no excel"
+                }));
+                listViewParametros.Items.Add(new ListViewItem(new[]
+                {
+                    $"<<{coluna}Maiusculo>>",
+                    $"{coluna} em maiúsculas"
+                }));
+                listViewParametros.Items.Add(new ListViewItem(new[]
+                {
+                    $"<<{coluna}PriMaiusculo>>",
+                    $"{coluna} com a primeira letra de cada palavra em maiúscula"
+                }));
+            }
+
             listViewParametros.Columns[1].Width = -2;
         }
 

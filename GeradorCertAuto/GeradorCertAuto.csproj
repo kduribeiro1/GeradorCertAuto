@@ -127,6 +127,9 @@
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -208,6 +211,12 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="ColunasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColunasForm.Designer.cs">
+      <DependentUpon>ColunasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gerador.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -220,9 +229,18 @@
     <Compile Include="ParametrosForm.Designer.cs">
       <DependentUpon>ParametrosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProgressoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressoForm.Designer.cs">
+      <DependentUpon>ProgressoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="ColunasForm.resx">
+      <DependentUpon>ColunasForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gerador.resx">
       <DependentUpon>Gerador.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,7 +256,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="GeradorCertAuto_TemporaryKey.pfx" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -246,6 +266,7 @@
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>

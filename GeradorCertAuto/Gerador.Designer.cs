@@ -36,6 +36,7 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.grpGeradorCertAuto = this.Factory.CreateRibbonGroup();
+            this.btnEditarColunas = this.Factory.CreateRibbonButton();
             this.btnGerarExcel = this.Factory.CreateRibbonButton();
             this.btnParametros = this.Factory.CreateRibbonButton();
             this.btnCriarCert = this.Factory.CreateRibbonButton();
@@ -52,11 +53,18 @@
             // 
             // grpGeradorCertAuto
             // 
+            this.grpGeradorCertAuto.Items.Add(this.btnEditarColunas);
             this.grpGeradorCertAuto.Items.Add(this.btnGerarExcel);
             this.grpGeradorCertAuto.Items.Add(this.btnParametros);
             this.grpGeradorCertAuto.Items.Add(this.btnCriarCert);
             this.grpGeradorCertAuto.Label = "Gerador Cert Auto";
             this.grpGeradorCertAuto.Name = "grpGeradorCertAuto";
+            // 
+            // btnEditarColunas
+            // 
+            this.btnEditarColunas.Label = "Editar Colunas";
+            this.btnEditarColunas.Name = "btnEditarColunas";
+            this.btnEditarColunas.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnEditarColunas_Click);
             // 
             // btnGerarExcel
             // 
@@ -97,6 +105,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnGerarExcel;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnCriarCert;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnParametros;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnEditarColunas;
     }
 
     partial class ThisRibbonCollection
