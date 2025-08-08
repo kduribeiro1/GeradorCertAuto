@@ -37,7 +37,7 @@
             this.lblPercentual.AutoSize = true;
             this.lblPercentual.Location = new System.Drawing.Point(350, 35);
             this.lblPercentual.Name = "lblPercentual";
-            this.lblPercentual.Size = new System.Drawing.Size(35, 13);
+            this.lblPercentual.Size = new System.Drawing.Size(21, 13);
             this.lblPercentual.TabIndex = 1;
             this.lblPercentual.Text = "0%";
             // 
@@ -69,22 +69,30 @@
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Visible = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            this.btnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
             // 
             // ProgressoForm
             // 
             this.ClientSize = new System.Drawing.Size(400, 100);
+            this.ControlBox = false;
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.lblConcluido);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblPercentual);
             this.Controls.Add(this.progressBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(416, 139);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(416, 139);
             this.Name = "ProgressoForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Progresso da Geração";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }

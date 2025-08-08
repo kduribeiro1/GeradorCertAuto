@@ -13,9 +13,21 @@ namespace GeradorCertAuto
 {
     public partial class ParametrosForm : Form
     {
-        public ParametrosForm()
+        public ParametrosForm(bool ehModeloSelecionado = false)
         {
             InitializeComponent();
+
+            Properties.Settings.Default.Reload();
+
+            if (ehModeloSelecionado)
+            {
+                var modeloSelecionado = JsonConvert.DeserializeObject<ModeloCertificado>(Properties.Settings.Default.ModeloSelecionado);
+                lblTituloFrm.Text = $"Parâmetros do Modelo: {modeloSelecionado.Nome}";
+            }
+            else
+            {
+                lblTituloFrm.Text = "Parâmetros do Excel";
+            }
 
             this.Resize += ParametrosForm_Resize;
 
@@ -27,6 +39,12 @@ namespace GeradorCertAuto
 
             // Obtém os nomes das colunas da configuração
             var json = Properties.Settings.Default.ColunasExcel;
+            if (ehModeloSelecionado)
+            {
+                var modeloSelecionado = JsonConvert.DeserializeObject<ModeloCertificado>(Properties.Settings.Default.ModeloSelecionado);
+                json = modeloSelecionado.ColunasExcel;
+            }
+
             List<string> colunas;
             if (string.IsNullOrWhiteSpace(json))
                 colunas = new List<string> { "Nome", "Cargo", "Empresa" };

@@ -34,5 +34,29 @@ namespace GeradorCertAuto.Properties {
                 this["ColunasExcel"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ModeloSelecionado {
+            get {
+                return ((string)(this["ModeloSelecionado"]));
+            }
+            set {
+                this["ModeloSelecionado"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ModelosExecutar {
+            get {
+                return ((string)(this["ModelosExecutar"]));
+            }
+            set {
+                this["ModelosExecutar"] = value;
+            }
+        }
     }
 }

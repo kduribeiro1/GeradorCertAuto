@@ -29,7 +29,7 @@ namespace GeradorCertAuto
             lblPercentual.Visible = false;
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
+        private void BtnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -12,6 +12,9 @@ namespace GeradorCertAuto
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+            // Limpa apenas na inicialização do PowerPoint (primeira vez que o add-in é carregado)
+            Properties.Settings.Default.ModeloSelecionado = string.Empty;
+            Properties.Settings.Default.Save();
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
