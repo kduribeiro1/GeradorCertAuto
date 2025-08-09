@@ -52,11 +52,18 @@ namespace GeradorCertAuto
 
         private void BtnNovo_Click(object sender, EventArgs e)
         {
-            ModeloCertificado modelo = new ModeloCertificado();
-            FrmModeloCert frm = new FrmModeloCert(modelo);
-            if (frm.ShowDialog() == DialogResult.OK)
+            try
             {
-                CarregarModelos();
+                ModeloCertificado modelo = new ModeloCertificado();
+                FrmModeloCert frm = new FrmModeloCert(modelo);
+                if (frm.ShowDialog() == DialogResult.OK)
+                {
+                    CarregarModelos();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao criar novo modelo: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -177,18 +184,6 @@ namespace GeradorCertAuto
                 {
                     item.Selected = true;
                 }
-            }
-        }
-
-        private void UtilizarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (listViewModelos.SelectedItems.Count == 1)
-            {
-                int id = Convert.ToInt32(listViewModelos.SelectedItems[0].Text);
-                ModeloCertificado modeloCertificado = new ModeloCertificado(id);
-                modeloCertificado.GetModeloById();
-                Properties.Settings.Default.ModeloSelecionado = JsonConvert.SerializeObject(modeloCertificado);
-                Properties.Settings.Default.Save();
             }
         }
     }

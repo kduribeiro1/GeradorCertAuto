@@ -93,7 +93,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 373);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(680, 431);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -104,7 +104,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(8, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(442, 35);
+            this.label1.Size = new System.Drawing.Size(490, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Selecione os modelos desejados:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,9 +112,9 @@
             // btnAbrirPasta
             // 
             this.btnAbrirPasta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAbrirPasta.Location = new System.Drawing.Point(539, 229);
+            this.btnAbrirPasta.Location = new System.Drawing.Point(595, 287);
             this.btnAbrirPasta.Name = "btnAbrirPasta";
-            this.btnAbrirPasta.Size = new System.Drawing.Size(67, 26);
+            this.btnAbrirPasta.Size = new System.Drawing.Size(75, 26);
             this.btnAbrirPasta.TabIndex = 1;
             this.btnAbrirPasta.Text = "Abrir";
             this.btnAbrirPasta.UseVisualStyleBackColor = true;
@@ -123,9 +123,9 @@
             // btnGerarTab
             // 
             this.btnGerarTab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnGerarTab.Location = new System.Drawing.Point(8, 336);
+            this.btnGerarTab.Location = new System.Drawing.Point(8, 394);
             this.btnGerarTab.Name = "btnGerarTab";
-            this.btnGerarTab.Size = new System.Drawing.Size(140, 29);
+            this.btnGerarTab.Size = new System.Drawing.Size(156, 29);
             this.btnGerarTab.TabIndex = 1;
             this.btnGerarTab.Text = "Gerar Tabela";
             this.btnGerarTab.UseVisualStyleBackColor = true;
@@ -134,9 +134,9 @@
             // btnGerarCert
             // 
             this.btnGerarCert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnGerarCert.Location = new System.Drawing.Point(159, 336);
+            this.btnGerarCert.Location = new System.Drawing.Point(175, 394);
             this.btnGerarCert.Name = "btnGerarCert";
-            this.btnGerarCert.Size = new System.Drawing.Size(140, 29);
+            this.btnGerarCert.Size = new System.Drawing.Size(156, 29);
             this.btnGerarCert.TabIndex = 2;
             this.btnGerarCert.Text = "Gerar Certificados";
             this.btnGerarCert.UseVisualStyleBackColor = true;
@@ -146,9 +146,9 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.btnFechar, 3);
             this.btnFechar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFechar.Location = new System.Drawing.Point(461, 336);
+            this.btnFechar.Location = new System.Drawing.Point(509, 394);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(145, 29);
+            this.btnFechar.Size = new System.Drawing.Size(161, 29);
             this.btnFechar.TabIndex = 3;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             this.chkbModelos.FormattingEnabled = true;
             this.chkbModelos.Location = new System.Drawing.Point(8, 48);
             this.chkbModelos.Name = "chkbModelos";
-            this.chkbModelos.Size = new System.Drawing.Size(598, 170);
+            this.chkbModelos.Size = new System.Drawing.Size(662, 228);
             this.chkbModelos.TabIndex = 4;
             this.chkbModelos.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ChkbModelos_ItemCheck);
             // 
@@ -170,9 +170,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(8, 226);
+            this.label2.Location = new System.Drawing.Point(8, 284);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 32);
+            this.label2.Size = new System.Drawing.Size(156, 32);
             this.label2.TabIndex = 5;
             this.label2.Text = "Pasta Principal:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -182,20 +182,20 @@
             this.tableLayoutPanel1.SetColumnSpan(this.txtLocal, 3);
             this.txtLocal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocal.Location = new System.Drawing.Point(159, 229);
+            this.txtLocal.Location = new System.Drawing.Point(175, 287);
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.ReadOnly = true;
-            this.txtLocal.Size = new System.Drawing.Size(291, 21);
+            this.txtLocal.Size = new System.Drawing.Size(323, 21);
             this.txtLocal.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(8, 263);
+            this.label3.Location = new System.Drawing.Point(8, 321);
             this.label3.Name = "label3";
             this.tableLayoutPanel1.SetRowSpan(this.label3, 3);
-            this.label3.Size = new System.Drawing.Size(140, 65);
+            this.label3.Size = new System.Drawing.Size(156, 65);
             this.label3.TabIndex = 8;
             this.label3.Text = "Progresso";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -204,18 +204,18 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.pgbLinhas, 3);
             this.pgbLinhas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pgbLinhas.Location = new System.Drawing.Point(159, 266);
+            this.pgbLinhas.Location = new System.Drawing.Point(175, 324);
             this.pgbLinhas.Name = "pgbLinhas";
-            this.pgbLinhas.Size = new System.Drawing.Size(291, 24);
+            this.pgbLinhas.Size = new System.Drawing.Size(323, 24);
             this.pgbLinhas.TabIndex = 9;
             // 
             // pgbModelos
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.pgbModelos, 3);
             this.pgbModelos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pgbModelos.Location = new System.Drawing.Point(159, 301);
+            this.pgbModelos.Location = new System.Drawing.Point(175, 359);
             this.pgbModelos.Name = "pgbModelos";
-            this.pgbModelos.Size = new System.Drawing.Size(291, 24);
+            this.pgbModelos.Size = new System.Drawing.Size(323, 24);
             this.pgbModelos.TabIndex = 10;
             // 
             // lblProgLinhas
@@ -223,9 +223,9 @@
             this.lblProgLinhas.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.lblProgLinhas, 3);
             this.lblProgLinhas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblProgLinhas.Location = new System.Drawing.Point(461, 263);
+            this.lblProgLinhas.Location = new System.Drawing.Point(509, 321);
             this.lblProgLinhas.Name = "lblProgLinhas";
-            this.lblProgLinhas.Size = new System.Drawing.Size(145, 30);
+            this.lblProgLinhas.Size = new System.Drawing.Size(161, 30);
             this.lblProgLinhas.TabIndex = 11;
             this.lblProgLinhas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -234,18 +234,18 @@
             this.lblProgModelos.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.lblProgModelos, 3);
             this.lblProgModelos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblProgModelos.Location = new System.Drawing.Point(461, 298);
+            this.lblProgModelos.Location = new System.Drawing.Point(509, 356);
             this.lblProgModelos.Name = "lblProgModelos";
-            this.lblProgModelos.Size = new System.Drawing.Size(145, 30);
+            this.lblProgModelos.Size = new System.Drawing.Size(161, 30);
             this.lblProgModelos.TabIndex = 12;
             this.lblProgModelos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSelecionarPasta
             // 
             this.btnSelecionarPasta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSelecionarPasta.Location = new System.Drawing.Point(461, 229);
+            this.btnSelecionarPasta.Location = new System.Drawing.Point(509, 287);
             this.btnSelecionarPasta.Name = "btnSelecionarPasta";
-            this.btnSelecionarPasta.Size = new System.Drawing.Size(67, 26);
+            this.btnSelecionarPasta.Size = new System.Drawing.Size(75, 26);
             this.btnSelecionarPasta.TabIndex = 0;
             this.btnSelecionarPasta.Text = "Selecionar";
             this.btnSelecionarPasta.UseVisualStyleBackColor = true;
@@ -255,9 +255,9 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.btnAtualizarLista, 3);
             this.btnAtualizarLista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAtualizarLista.Location = new System.Drawing.Point(461, 8);
+            this.btnAtualizarLista.Location = new System.Drawing.Point(509, 8);
             this.btnAtualizarLista.Name = "btnAtualizarLista";
-            this.btnAtualizarLista.Size = new System.Drawing.Size(145, 29);
+            this.btnAtualizarLista.Size = new System.Drawing.Size(161, 29);
             this.btnAtualizarLista.TabIndex = 13;
             this.btnAtualizarLista.Text = "Atualizar Lista";
             this.btnAtualizarLista.UseVisualStyleBackColor = true;
@@ -267,7 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 373);
+            this.ClientSize = new System.Drawing.Size(680, 431);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MinimumSize = new System.Drawing.Size(632, 412);
             this.Name = "FrmSistema";

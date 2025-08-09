@@ -71,7 +71,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(277, 366);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(397, 395);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // dgvColunas
@@ -83,7 +83,7 @@
             this.dgvColunas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvColunas.Location = new System.Drawing.Point(8, 48);
             this.dgvColunas.Name = "dgvColunas";
-            this.dgvColunas.Size = new System.Drawing.Size(261, 180);
+            this.dgvColunas.Size = new System.Drawing.Size(381, 209);
             this.dgvColunas.TabIndex = 1;
             // 
             // NomeColuna
@@ -96,9 +96,9 @@
             // btnAdicionar
             // 
             this.btnAdicionar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdicionar.Location = new System.Drawing.Point(8, 239);
+            this.btnAdicionar.Location = new System.Drawing.Point(8, 268);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(125, 29);
+            this.btnAdicionar.Size = new System.Drawing.Size(185, 29);
             this.btnAdicionar.TabIndex = 2;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -107,9 +107,9 @@
             // btnRemover
             // 
             this.btnRemover.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRemover.Location = new System.Drawing.Point(144, 239);
+            this.btnRemover.Location = new System.Drawing.Point(204, 268);
             this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(125, 29);
+            this.btnRemover.Size = new System.Drawing.Size(185, 29);
             this.btnRemover.TabIndex = 3;
             this.btnRemover.Text = "Remover";
             this.btnRemover.UseVisualStyleBackColor = true;
@@ -118,9 +118,9 @@
             // btnSalvar
             // 
             this.btnSalvar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSalvar.Location = new System.Drawing.Point(144, 279);
+            this.btnSalvar.Location = new System.Drawing.Point(204, 308);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(125, 29);
+            this.btnSalvar.Size = new System.Drawing.Size(185, 29);
             this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -131,9 +131,9 @@
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 3);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(8, 316);
+            this.label1.Location = new System.Drawing.Point(8, 345);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 45);
+            this.label1.Size = new System.Drawing.Size(381, 45);
             this.label1.TabIndex = 5;
             this.label1.Text = "OBS.: O nome da coluna não poderá conter espaço, caso seja misto coloque tudo jun" +
     "to com iniciais em maiusculo, ex.: NomeAluno";
@@ -144,7 +144,7 @@
             this.lblTituloFrm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTituloFrm.Location = new System.Drawing.Point(8, 5);
             this.lblTituloFrm.Name = "lblTituloFrm";
-            this.lblTituloFrm.Size = new System.Drawing.Size(261, 35);
+            this.lblTituloFrm.Size = new System.Drawing.Size(381, 35);
             this.lblTituloFrm.TabIndex = 6;
             this.lblTituloFrm.Text = "Configurar Colunas do Excel";
             this.lblTituloFrm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,9 +152,9 @@
             // btnFechar
             // 
             this.btnFechar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFechar.Location = new System.Drawing.Point(8, 279);
+            this.btnFechar.Location = new System.Drawing.Point(8, 308);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(125, 29);
+            this.btnFechar.Size = new System.Drawing.Size(185, 29);
             this.btnFechar.TabIndex = 7;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -164,7 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 366);
+            this.ClientSize = new System.Drawing.Size(397, 395);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

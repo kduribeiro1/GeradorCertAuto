@@ -55,15 +55,15 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 363);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(559, 390);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnCopiar
             // 
             this.btnCopiar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCopiar.Location = new System.Drawing.Point(8, 326);
+            this.btnCopiar.Location = new System.Drawing.Point(8, 353);
             this.btnCopiar.Name = "btnCopiar";
-            this.btnCopiar.Size = new System.Drawing.Size(409, 29);
+            this.btnCopiar.Size = new System.Drawing.Size(543, 29);
             this.btnCopiar.TabIndex = 0;
             this.btnCopiar.Text = "Copiar Parâmetro Selecionado";
             this.btnCopiar.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             this.listViewParametros.HideSelection = false;
             this.listViewParametros.Location = new System.Drawing.Point(8, 48);
             this.listViewParametros.Name = "listViewParametros";
-            this.listViewParametros.Size = new System.Drawing.Size(409, 267);
+            this.listViewParametros.Size = new System.Drawing.Size(543, 294);
             this.listViewParametros.TabIndex = 1;
             this.listViewParametros.UseCompatibleStateImageBehavior = false;
             // 
@@ -85,7 +85,7 @@
             this.lblTituloFrm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTituloFrm.Location = new System.Drawing.Point(8, 5);
             this.lblTituloFrm.Name = "lblTituloFrm";
-            this.lblTituloFrm.Size = new System.Drawing.Size(409, 35);
+            this.lblTituloFrm.Size = new System.Drawing.Size(543, 35);
             this.lblTituloFrm.TabIndex = 2;
             this.lblTituloFrm.Text = "Parâmetros do Excel";
             this.lblTituloFrm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 363);
+            this.ClientSize = new System.Drawing.Size(559, 390);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(441, 402);

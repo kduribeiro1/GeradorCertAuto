@@ -151,7 +151,7 @@ namespace GeradorCertAuto
             }    
 
             if (Arquivo == null || Arquivo.Length == 0)
-                throw new InvalidOperationException("Nenhum arquivo carregado para salvar.");
+                MessageBox.Show("Nenhum arquivo carregado para salvar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             try
             {
                 string diretorio = System.IO.Path.GetDirectoryName(caminhoArquivo);

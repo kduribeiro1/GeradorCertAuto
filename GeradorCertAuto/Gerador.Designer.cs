@@ -51,11 +51,14 @@
             this.btnGerarExcel = this.Factory.CreateRibbonButton();
             this.btnParametros = this.Factory.CreateRibbonButton();
             this.btnCriarCert = this.Factory.CreateRibbonButton();
+            this.group1 = this.Factory.CreateRibbonGroup();
+            this.lblVersao = this.Factory.CreateRibbonLabel();
             this.tab1.SuspendLayout();
             this.tabGerador.SuspendLayout();
             this.grpSisModelos.SuspendLayout();
             this.grpCertSelect.SuspendLayout();
             this.grpCertAberto.SuspendLayout();
+            this.group1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -69,6 +72,7 @@
             this.tabGerador.Groups.Add(this.grpSisModelos);
             this.tabGerador.Groups.Add(this.grpCertSelect);
             this.tabGerador.Groups.Add(this.grpCertAberto);
+            this.tabGerador.Groups.Add(this.group1);
             this.tabGerador.Label = "Gerador Certificado";
             this.tabGerador.Name = "tabGerador";
             // 
@@ -171,6 +175,17 @@
             this.btnCriarCert.Name = "btnCriarCert";
             this.btnCriarCert.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnCriarCert_Click);
             // 
+            // group1
+            // 
+            this.group1.Items.Add(this.lblVersao);
+            this.group1.Label = "Sobre";
+            this.group1.Name = "group1";
+            // 
+            // lblVersao
+            // 
+            this.lblVersao.Label = "Versão: 2.0.0.12";
+            this.lblVersao.Name = "lblVersao";
+            // 
             // Gerador
             // 
             this.Name = "Gerador";
@@ -188,6 +203,8 @@
             this.grpCertSelect.PerformLayout();
             this.grpCertAberto.ResumeLayout(false);
             this.grpCertAberto.PerformLayout();
+            this.group1.ResumeLayout(false);
+            this.group1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -211,6 +228,8 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnCertSelectEdtCol;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnCertSelectSalvar;
         internal Microsoft.Office.Tools.Ribbon.RibbonDropDown dpdModelos;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonLabel lblVersao;
     }
 
     partial class ThisRibbonCollection

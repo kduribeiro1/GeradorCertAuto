@@ -92,7 +92,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(464, 427);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(524, 494);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label2
@@ -120,7 +120,7 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Location = new System.Drawing.Point(8, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 187);
+            this.label4.Size = new System.Drawing.Size(84, 254);
             this.label4.TabIndex = 3;
             this.label4.Text = "Colunas do Excel: ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -128,7 +128,7 @@
             // label5
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(8, 347);
+            this.label5.Location = new System.Drawing.Point(8, 414);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 30);
             this.label5.TabIndex = 4;
@@ -145,12 +145,12 @@
             this.tableLayoutPanel2.Controls.Add(this.btnCancelar, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSalvar, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 385);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 452);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(448, 34);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(508, 34);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // btnCancelar
@@ -158,7 +158,7 @@
             this.btnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCancelar.Location = new System.Drawing.Point(3, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(215, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(245, 28);
             this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -167,9 +167,9 @@
             // btnSalvar
             // 
             this.btnSalvar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSalvar.Location = new System.Drawing.Point(229, 3);
+            this.btnSalvar.Location = new System.Drawing.Point(259, 3);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(216, 28);
+            this.btnSalvar.Size = new System.Drawing.Size(246, 28);
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Cadastrar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -182,7 +182,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(8, 5);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(448, 35);
+            this.lblTitulo.Size = new System.Drawing.Size(508, 35);
             this.lblTitulo.TabIndex = 6;
             this.lblTitulo.Text = "Cadastrar Modelo";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,7 +211,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(353, 181);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(413, 248);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // dgvColunas
@@ -223,7 +223,7 @@
             this.dgvColunas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvColunas.Location = new System.Drawing.Point(8, 8);
             this.dgvColunas.Name = "dgvColunas";
-            this.dgvColunas.Size = new System.Drawing.Size(337, 82);
+            this.dgvColunas.Size = new System.Drawing.Size(397, 149);
             this.dgvColunas.TabIndex = 1;
             // 
             // NomeColuna
@@ -236,9 +236,9 @@
             // btnAdicionar
             // 
             this.btnAdicionar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdicionar.Location = new System.Drawing.Point(8, 101);
+            this.btnAdicionar.Location = new System.Drawing.Point(8, 168);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(163, 31);
+            this.btnAdicionar.Size = new System.Drawing.Size(193, 31);
             this.btnAdicionar.TabIndex = 2;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -247,9 +247,9 @@
             // btnRemover
             // 
             this.btnRemover.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRemover.Location = new System.Drawing.Point(182, 101);
+            this.btnRemover.Location = new System.Drawing.Point(212, 168);
             this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(163, 31);
+            this.btnRemover.Size = new System.Drawing.Size(193, 31);
             this.btnRemover.TabIndex = 3;
             this.btnRemover.Text = "Remover";
             this.btnRemover.UseVisualStyleBackColor = true;
@@ -260,9 +260,9 @@
             this.label1.AutoSize = true;
             this.tableLayoutPanel3.SetColumnSpan(this.label1, 3);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(8, 140);
+            this.label1.Location = new System.Drawing.Point(8, 207);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 36);
+            this.label1.Size = new System.Drawing.Size(397, 36);
             this.label1.TabIndex = 5;
             this.label1.Text = "OBS.: O nome da coluna não poderá conter espaço, caso seja misto coloque tudo jun" +
     "to com iniciais em maiusculo, ex.: NomeAluno";
@@ -270,7 +270,7 @@
             // btnSelecionar
             // 
             this.btnSelecionar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSelecionar.Location = new System.Drawing.Point(372, 350);
+            this.btnSelecionar.Location = new System.Drawing.Point(432, 417);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(84, 24);
             this.btnSelecionar.TabIndex = 8;
@@ -284,7 +284,7 @@
             this.txtNome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNome.Location = new System.Drawing.Point(103, 48);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(353, 20);
+            this.txtNome.Size = new System.Drawing.Size(413, 20);
             this.txtNome.TabIndex = 9;
             // 
             // txtDescricao
@@ -295,16 +295,16 @@
             this.txtDescricao.Location = new System.Drawing.Point(103, 83);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(353, 64);
+            this.txtDescricao.Size = new System.Drawing.Size(413, 64);
             this.txtDescricao.TabIndex = 10;
             // 
             // txtArquivo
             // 
             this.txtArquivo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtArquivo.Location = new System.Drawing.Point(103, 350);
+            this.txtArquivo.Location = new System.Drawing.Point(103, 417);
             this.txtArquivo.Name = "txtArquivo";
             this.txtArquivo.ReadOnly = true;
-            this.txtArquivo.Size = new System.Drawing.Size(258, 20);
+            this.txtArquivo.Size = new System.Drawing.Size(318, 20);
             this.txtArquivo.TabIndex = 11;
             this.txtArquivo.DoubleClick += new System.EventHandler(this.BtnSelecionar_Click);
             // 
@@ -319,7 +319,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 427);
+            this.ClientSize = new System.Drawing.Size(524, 494);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MinimumSize = new System.Drawing.Size(480, 466);
             this.Name = "FrmModeloCert";
